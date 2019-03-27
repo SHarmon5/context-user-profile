@@ -5,10 +5,8 @@ import UserForm from  './UserForm'
 
 const UserProfile = () => (
   <>
-    <body background="./images/AFimage.jpeg">
     <User />
     <UserForm />
-    </body>
   </>
 )
 

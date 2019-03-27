@@ -6,12 +6,15 @@ import { BrowserRouter, } from "react-router-dom"
 import 'semantic-ui-css/semantic.min.css'
 import UserProvider from './providers/UserProvider'
 import * as serviceWorker from './serviceWorker';
+import FriendProvider from './providers/FriendProvider';
 
 ReactDOM.render(
   <UserProvider>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <FriendProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </FriendProvider>
   </UserProvider>,
 document.getElementById('root'));
 
